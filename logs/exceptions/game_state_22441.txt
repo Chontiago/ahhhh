@@ -1,0 +1,21 @@
+# * EXCEPTION:
+# * ERROR - :>> method missing on ~GTK::OutputsArray~.
+# The method named
+# :>>
+# with args
+# [{:x=>640.0, :y=>0, :w=>100, :h=>50}]
+# doesn't exist on
+# [GTK::OutputsArray, Enumerable].
+# #+begin_src ~GTK::OutputsArray#inspect~
+# [[0, 0, 50, 50], {:x=>nil, :y=>nil, :w=>50, :h=>50}]
+# #+end_src ~GTK::OutputsArray#inspect~ for :>> method missing on ~GTK::OutputsArray~
+# ** Backtrace:
+# *** app/main.rb:84:in render_gameplay
+# *** app/main.rb:71:in gameplay_state
+# *** app/main.rb:67:in game_state
+# *** app/main.rb:104:in tick
+# *** app/main.rb:110:in tick
+# *** app/main.rb:108
+
+Game State:
+{:state=>{:entity_id=>3, :tick_count=>22441, :__thrash_count__=>{}, :game=>#<Game:0x7fd6742c9a30>}, :temp_state=>{}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_three=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_four=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:truthy_keys=>[]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>false}, :mouse=>{:x=>972.0, :y=>720.0, :moved=>nil, :moved_at=>908, :has_focus=>false}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[[0, 0, 50, 50], {:x=>nil, :y=>nil, :w=>50, :h=>50}], :sprites=>[], :lines=>[], :labels=>[], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:device_top=>720, :device_bottom=>0.0, :origin_x=>0.0, :device_left=>0.0, :ffi_draw=>"", :device_right=>1280, :native_height=>720, :allscreen_offset_x=>0, :origin_y=>720, :native_width=>1280, :left=>0.0, :allscreen_height=>720, :right=>1280, :device_height=>720, :top=>720, :allscreen_offset_y=>0, :runtime=>{:argv=>"/Users/santiago/Desktop/libro_object_oriented_juegos/Primer_proyecto_despues/dragonruby-macos/dragonruby", :platform=>"Mac OS X", :required_files=>[], :reload_list_history=>{"app/main.rb"=>{:current=>{:path=>"app/main.rb", :global_at=>29881, :event=>:reload_completed}, :history=>[{:path=>"app/main.rb", :global_at=>-1, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>-1, :event=>:processing}, {:path=>"app/main.rb", :global_at=>-1, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>3539, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>3540, :event=>:processing}, {:path=>"app/main.rb", :global_at=>3541, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>4559, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>4560, :event=>:processing}, {:path=>"app/main.rb", :global_at=>4561, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>6599, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>6600, :event=>:processing}, {:path=>"app/main.rb", :global_at=>6601, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>7439, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>7440, :event=>:processing}, {:path=>"app/main.rb", :global_at=>7441, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>8279, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>8280, :event=>:processing}, {:path=>"app/main.rb", :global_at=>8281, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>28619, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>28620, :event=>:processing}, {:path=>"app/main.rb", :global_at=>28621, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>29879, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>29880, :event=>:processing}, {:path=>"app/main.rb", :global_at=>29881, :event=>:reload_completed}]}}}, :device_width=>1280, :bottom=>0.0, :allscreen_bottom=>0, :left_margin=>0.0, :name=>:bottom_left, :allscreen_width=>1280, :allscreen_right=>1280, :bottom_margin=>0.0, :allscreen_top=>720, :center_x=>640.0, :rect=>[0.0, 0.0, 1280, 720], :native_scale_enum=>100, :allscreen_left=>0, :native_scale=>1.0, :center_y=>360.0, :center=>[640.0, 360.0]}}

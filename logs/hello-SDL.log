@@ -1,0 +1,78 @@
+* 000000 [Engine] Log started at 2024/7/7 13:19:18
+* 000000 [Engine] This copy of the engine is git hash 85a12ae4d8ca2f1d15afa88dbb675e35dbaee473, built on Apr 13 2023, at 10:53:51
+* 000000 [Engine] Platform: Mac OS X
+* 000000 [Engine] 
+* 000000 [Engine] *******************************************************************************************
+* 000000 [Engine] *** This is the Standard license build!                                                 ***
+* 000000 [Engine] *** Get more with an Indie or Pro license such as C extensions, mobile dev, and VR dev! ***
+* 000000 [Engine] *** Details at http://dragonruby.org/toolkit/game#purchase                              ***
+* 000000 [Engine] *******************************************************************************************
+* 000000 [Engine] 
+! 000000 [Engine] Metadata file does not have all required fields!
+- 000000 [Engine] Game Dir: /Users/santiago/Desktop/libro_object_oriented_juegos/Primer_proyecto_despues/dragonruby-macos//mygame
+- 000000 [Engine] Game ID: hello-SDL
+- 000000 [Engine] Game Title: Update metadata/game_metadata.txt in your mygame directory to change this title.
+- 000000 [Engine] Game Version: 1.0
+- 000000 [Engine] Game Package ID: org.dragonruby.hello-SDL
+- 000000 [Engine] Game Developer ID: dragonruby
+- 000000 [Engine] Game Developer Title: DragonRuby LLC
+- 000000 [Engine] Production Build: no
+- 000000 [Engine] Remote Hotload: no
+? 000000 [Engine] Loading cvars from file 'metadata/cvars.txt' ...
+? 000000 [Engine] File 'metadata/cvars.txt' line 1 setting cvar 'log.filter_subsystems' to 'HTTPServer'
+? 000000 [Engine] File 'metadata/cvars.txt' complete
+- 000000 [Render] SDL video backend: cocoa
+- 000000 [Render] SDL renderer backend: metal
+- 000000 [Render] Window size: 1280x720 (requested 1280x720)
+- 000000 [Render] Fullscreen Desktop mode: no
+- 000000 [Render] Allow HighDPI: no
+- 000000 [Render] Max texture size: 16384x16384 (system reported 16384x16384)
+- 000000 [Render] Logical render size: 1280x720
+? 000000 [Engine] RNG seed has been set to 1720379958.
+- 000000 [Engine] Janitor is using 4 threads.
+? 000000 [Engine] Marked app/main.rb for reload. (-1)
+- 000000 [Game] 
+- 000000 [Game] * WARNING: Game does not support serialization. Returning nil.
+Please override the :serialize method and return a hash so that
+Class can be persisted to disk in the event of an exception.
+Here is an example of what you need to do:
+#+begin_src ruby
+class Game
+  # 1. Create a serialize method that returns a hash with all of
+  #    the values you care about.
+  def serialize
+    { }
+  end
+
+  # 2. Override the inspect method and return ~serialize.to_s~.
+  def inspect
+    serialize.to_s
+  end
+
+  # 3. Override to_s and return ~serialize.to_s~.
+  def to_s
+    serialize.to_s
+  end
+end
+#+end_src
+- 000000 [Game] 
+- 000000 [Game] [Message ID: []]
+- 000000 [Game] 
+- 000000 [Game] Game state and exception will be written to logs/exceptions/game_state_0.txt and logs/exceptions/current.txt.
+- 000000 [Game] * EXCEPTION:
+* ERROR - :score method missing on ~Game~.
+The method named
+  :score
+doesn't exist on
+  [Game, #<Class:#<Game:0x7ff1c9b424a0>>, Game].
+#+begin_src ~Game#inspect~
+#<Game:0x7ff1c9b424a0>
+#+end_src ~Game#inspect~ for :score method missing on ~Game~
+** Backtrace:
+*** app/main.rb:90:in gameplay_state
+*** app/main.rb:81:in game_state
+*** app/main.rb:185:in tick
+*** app/main.rb:191:in tick
+*** app/main.rb:189 (0)
+? 000021 [Engine] Marked app/main.rb for reload. (1259)
+* 000027 [Engine] Logging shutting down
